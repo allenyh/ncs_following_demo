@@ -13,7 +13,7 @@ WORKDIR /home/software/catkin_ws/src/
 RUN git clone https://github.com/ARG-NCTU/ncs_lane_following.git 
 RUN /bin/bash -c "cd /home/software/ && source /opt/ros/kinetic/setup.bash && catkin_make -C catkin_ws/"
 
-RUN [ "cross-build-start" ]
+RUN [ "cross-build-end" ]
 
 COPY run_ncslanefollowingdemo.sh .
 

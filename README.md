@@ -2,15 +2,14 @@
 ***
 
 ## How use this docker image
-first plug in an NCS and run the following command on your duckiebot
+First plug in an NCS and run the following command on your duckiebot
 
 `
-duckiebot $ docker run -it --net host --privileged -v /dev/bus/usb:/dev/bus/usb allenou/ncs_following_demo
+duckiebot $ docker run -it --name ncs_following --net host --privileged -v /dev:/dev -v /data:/data allenou/ncs_following_demo
 `
 
-#TODO how to use
-
-#TODO image explanation
+## Image reference
+This docker image is built from a github project called [ncs_lane_following](https://github.com/ARG-NCTU/ncs_lane_following) under ARG-NCTU, which is made by [Peter Hung](https://github.com/losttime1001)
 
 #TODO model explanation
 

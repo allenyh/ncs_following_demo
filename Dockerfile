@@ -15,6 +15,7 @@ RUN /bin/bash -c "cd /home/software/ && source /opt/ros/kinetic/setup.bash && ca
 
 RUN [ "cross-build-end" ]
 
+WORKDIR /home/software/
 COPY run_ncslanefollowingdemo.sh .
 
 CMD [ "./run_ncslanefollowingdemo.sh" ]
